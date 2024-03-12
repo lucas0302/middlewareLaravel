@@ -7,7 +7,7 @@
                 <h2>Add Novo Produto</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ url('/') }}"> Voltar</a>
+                <a class="btn btn-primary" href="{{ url('/produtos') }}"> Voltar</a>
             </div>
         </div>
     </div>

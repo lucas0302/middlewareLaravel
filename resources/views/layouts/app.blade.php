@@ -37,9 +37,11 @@
                     <ul class="navbar-nav ms-auto">
 
                         <!-- Deslogarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
-                        <form {{-- action= "{{ route() }}" --}} method="POST" enctype="multipart/form-data">
-                            <button>Logout</button>
+                        <form {{-- action= "{{ route('logout') }}" --}} method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <button type="submit" class="btn btn-primary">Logout</button>
                         </Form>
+                        
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
