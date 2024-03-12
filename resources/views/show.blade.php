@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 
 @section('content')
     <div class="row">
@@ -7,7 +7,7 @@
                 <h2> Visualizar Produto</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ url('/') }}">Volta</a>
+                <a class="btn btn-primary" href="{{ url('/produtos') }}">Volta</a>
             </div>
         </div>
     </div>

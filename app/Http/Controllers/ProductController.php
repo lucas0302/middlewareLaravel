@@ -54,7 +54,7 @@ class ProductController extends Controller
             }
         }
 
-        return redirect('/')->with('success', 'Produto criado com sucesso.');//redirecionando para a route('index') e retornado uma msg de prod criado
+        return redirect('/produtos')->with('success', 'Produto criado com sucesso.');//redirecionando para a route('index') e retornado uma msg de prod criado
     }
 
     public function show(Product $product)
@@ -95,7 +95,7 @@ class ProductController extends Controller
             }
         }
 
-        return redirect('/')->with('success', 'Produto atualizado com sucesso.');
+        return redirect('/produtos')->with('success', 'Produto atualizado com sucesso.');
     }
 
     public function deleteImage($imageId)
