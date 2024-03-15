@@ -37,7 +37,7 @@
                     <ul class="navbar-nav ms-auto">
 
                         <!-- Deslogarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
-                        <form {{-- action= "{{ route('logout') }}" --}} method="POST" enctype="multipart/form-data">
+                        <form action= "{{ route('logout') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <button type="submit" class="btn btn-primary">Logout</button>
                         </Form>

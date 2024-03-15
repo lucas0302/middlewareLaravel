@@ -27,6 +27,6 @@ use App\Http\Controllers\ProductController;
      //rota para apagar a img do edit
      Route::get('/products/delete-image/{imageId}','deleteImage')->name('deleteImage');
  });
-
+ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 // Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
